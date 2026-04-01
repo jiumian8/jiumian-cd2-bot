@@ -1,3 +1,4 @@
 flask
-wechatpy[pycryptodome]
+wechatpy
+pycryptodome
 requests
