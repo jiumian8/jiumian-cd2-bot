@@ -2,3 +2,5 @@ flask
 wechatpy
 pycryptodome
 requests
+grpcio
+grpcio-tools
