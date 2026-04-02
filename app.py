@@ -173,4 +173,13 @@ def wechat_callback():
             if msg_type == 'text':
                 content = tree.find('Content').text.strip()
                 # 开启新线程去处理业务，主线程秒回微信防止重复提醒
-                threading.Thread(target=process_message
+                threading.Thread(target=process_message_async, args=(from_user, content)).start()
+                
+            return "success"
+        except Exception as e:
+            print(f"[*] 处理异常: {e}")
+            return "success"
+
+if __name__ == '__main__':
+    print("[*] 机器人已启动，监听 5000 端口...")
+    app.run(host='0.0.0.0', port=5000)
