@@ -66,7 +66,7 @@ services:
       # --- Prowlarr 聚合搜索配置 ---
       - PROWLARR_URL=[http://192.168.](http://192.168.)x.x:9696  # Prowlarr的内网地址，必须带 http://
       - PROWLARR_API_KEY=你的Prowlarr_API_Key
-
+```
 ### 2. 配置企业微信回调
 
 前往企业微信后台 -> 应用管理 -> 你的应用 -> 接收消息 -> 设置 API 接收。
@@ -74,7 +74,6 @@ services:
 * **Token / EncodingAESKey:** 与 docker-compose 中的配置保持一致。
 点击保存，提示成功即可！
 
----
 
 ## 💡 使用说明 (Usage)
 
@@ -94,4 +93,4 @@ services:
 * **场景 3：选择下载**
     发送：`1`
     回复：✅ 离线任务建立成功！
-```
+
